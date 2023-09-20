@@ -30,7 +30,34 @@
     align-items: center;
 }
 
+.navmin{
+    display: none;
+}
+
 .navbar__item
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    text-transform: capitalize;
+}
+.navbar_min
+{
+    width: 100%;
+    height: 50px;
+    background-color: #252F3D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item_min
 {
     display: flex;
     align-items: center;
@@ -430,6 +457,7 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: 100px;
+    margin-top: 70px;
 }
 .name_person{
     color: #333;
@@ -526,10 +554,24 @@
     padding-left: 7px;
 }
 
-/* Estilos para pantallas con ancho máximo de 600px */
+.min-steps{
+    display: none;
+}
+
+/* DESIGN RESPONSIVE */
 @media screen and (max-width: 1500px) {
-    body {
-        /* background-color: red; */
+
+    .text_main_mobile{
+        display: block !important;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .text_main_mobile span{
+        font-size: 110%;
+    }
+    .text_main{
+        display: none;
     }
     .left_big_image{
         align-items: flex-start;
@@ -584,5 +626,315 @@
     }
     .free_shipping {
         margin-right: 7px;
+    }
+    .group_testimonials{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .content-container{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .left_big_image img{
+        width: 100%;
+    }
+    .left_big_image{
+       width: 100%; 
+    }
+    .right_content{
+        width: 100%;
+    }
+    .group-steps{
+        margin: 40px 0;
+    }
+    .circle-color{
+        flex-direction: column;
+    }
+    .navbar{
+        display: none;
+    }
+    .container{
+        width: 90%;
+    }
+    .container_images{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container_images__left{
+        width: 40%;
+    }
+    .container_images__left img{
+        width: 137px;
+    }
+
+    .container_images__right{
+        width: 60%;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+    
+    .container_images__right img{
+        width: 60px
+    }
+    .title_main {
+        font-size: 30px;
+    }
+    .paragraph_main {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .circle-color, .text-blue, .text-green{
+        font-size: 11px;
+    }
+    .steps-full{
+        display: none;
+    }
+    .min-steps{
+        display: flex;
+    }
+
+    .first_step{
+        left: 19px;
+        top: 10px;
+    }
+    .second_step{
+        top: 10px;
+        left: 14px;
+    }
+    .three_step{
+        left: 28px !important;
+        top: 9px;
+    }
+
+    .p_save_money, .span_save{
+        font-size: 13px;
+    }
+
+    .cirle_save_money{
+        padding-right: 10px;
+    }
+    .content-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .p_items, .p_items_strong{
+        font-size: 14px;
+    }
+    .credit_card_min{
+        display: none;
+    }
+
+    .navmin{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+    }
+    .justify-center{
+        justify-content: space-between;
+    }
+
+    .container_footer{
+        display: block;
+    }
+
+    .left_footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left_footer span{
+        font-size: 12px;
+    }
+    .span_foo{
+        
+        font-size: 12px;
+    }
+
+    .right_footer{
+        justify-content: center;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .right_footer span{
+        font-size: 12px;
+    }
+
+    .testimonial{
+        display: none;
+    }
+
+    .vmobile{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* DESKTOP AND TABLETS */
+@media screen and (min-width: 1500px) {
+
+    .text_main_mobile{
+        display: none !important;
+    }
+    .min-steps{
+        display: none;
+    }
+    .credit_card_min{
+        display: none;
+    }
+
+    .navmin{
+        display: none;
+    }
+
+    .content_flex{
+        margin-top: 32px;
+    }
+
+    .vmobile{
+        margin-top: -90px;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+
+    .content_flex{
+        margin-top: -10px;
+    }
+
+    .vmobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text_main_mobile{
+        display: block !important;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .text_main_mobile span{
+        font-size: 110%;
+    }
+
+    .text_main{
+        display: none;
+    }
+
+    .justify-center{
+        justify-content: space-between;
+    }
+    .content_right{
+        height: 185px;
+        /* background-color: red; */
+        width: 29%;
+    }
+    .content_flex{
+        gap: 18px
+    }
+    .p_save_money, .span_save{
+        font-size: 13px;
+    }
+    .cirle_save_money{
+        padding-right: 10px;
+    }
+    .content-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .p_items, .p_items_strong{
+        font-size: 14px;
+    }
+    .button_claim{
+        font-size: 14px;
+        height: 47px;
+        gap: 7px;
+    }
+
+    .credit_card_min{
+        display: block;
+        border: 1px solid #CFCFCF;
+    }
+
+    .credit_card_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        height: 100%;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #CFCFCF;
+        padding: 8px;
+    }
+
+    .secure_credit_card_min{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-left: 1px solid #CFCFCF;
+        padding-left: 20px;
+    }
+
+    .credit_card{
+        display: none;
+    }
+
+    .franchises_min{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .franchises_min img{
+        width: 10%;
+    }
+
+    .testimonial{
+        display: none;
+    }
+
+    .paragraph_warranty, .paragraph_warranty_strong{
+        font-size: 14px;
+    }
+
+    .group_testimonials{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .container_footer{
+        display: block;
+    }
+
+    .left_footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left_footer span{
+        font-size: 12px;
+    }
+    .span_foo{
+        
+        font-size: 12px;
+    }
+
+    .right_footer{
+        justify-content: center;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .right_footer span{
+        font-size: 12px;
+    }
+
+    .navmin{
+        display: flex;
     }
 }

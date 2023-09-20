@@ -1,3 +1,6 @@
+import { CreditCardMin } from "./CrediCardMin"
+import { CreditCard } from "./CreditCard"
+
 export const Content = () => {
     return (
         <div className="content-container">
@@ -5,7 +8,7 @@ export const Content = () => {
                 <img src="images/big-image.svg" alt="" />
             </div>
             <div className="right_content">
-                <p className="p_image"><span className="p-blue-image">ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className="p-blue-image">$14 each</span> ($84.00 total!)</p>
+                <p className="p_image text_main"><span className="p-blue-image">ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className="p-blue-image">$14 each</span> ($84.00 total!)</p>
                 <div className="content_flex">
                     <div className="content_right">
                         <img className="image_aparato" src="images/image-small.svg" alt="" />
@@ -68,26 +71,8 @@ export const Content = () => {
                     <img src="icons/arrow_left.svg" alt="" />
                 </button>
 
-
-                <div className="credit_card">
-                    <div className="free_shipping">
-                        <span className="text_credit_card">Free Shipping</span>
-                    </div>
-                    <div className="secure_credit_card">
-                        <img src="icons/lock.svg" alt="" />
-                        <span className="text_credit_card">Secure 256-bit SSL encryption.</span>
-                    </div>
-                    <div className="franchises">
-                        <img className="img_franchises" src="icons/visa.svg" alt="" />
-                        <img className="img_franchises" src="icons/shop_pay.svg" alt="" />
-                        <img className="img_franchises" src="icons/paypal.svg" alt="" />
-                        <img className="img_franchises" src="icons/mastercard.svg" alt="" />
-                        <img className="img_franchises" src="icons/gpay.svg" alt="" />
-                        <img className="img_franchises" src="icons/apple_pay.svg" alt="" />
-                        <img className="img_franchises" src="icons/amex.svg" alt="" />
-                    </div>
-                </div>
-
+                <CreditCard />
+                <CreditCardMin />
 
                 <h3 className="i_dont_want">No thanks, I don’t want this</h3>
 

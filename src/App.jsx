@@ -8,10 +8,13 @@ import { Content } from "./components/Content"
 import { Testimonial } from "./components/Testimonial"
 import { Warranty } from "./components/Warranty"
 import { Footer } from "./components/Footer"
+import { StepsMin } from "./components/StepsMin"
+import { NavbarMin } from "./components/NavbarMin"
 export const App = () => {
    return (
     <>
       <Navbar />
+      <NavbarMin />
       <Space/>
       <div className="container">
         <Patners />
@@ -21,7 +24,10 @@ export const App = () => {
             <p className="paragraph_main">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
         </div>        
         <Steps />
-        <Space/>
+        <StepsMin />
+        <div className="content-container vmobile">
+          <p className="p_image text_main_mobile"><span className="p-blue-image">ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className="p-blue-image">$14 each</span> ($84.00 total!)</p>
+        </div>
         <Content />
         <div className="group_testimonials">
           <Testimonial />
